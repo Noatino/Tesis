@@ -1,22 +1,43 @@
 \chapter{Constrains using HAWC on GRB170817A}
 
-Desafortunadamente, el evento de la onda gravitacional GW170817 ocurrió fuera del campo de visión de HAWC. Sin embargo, 8 hrs depués el tránsito logra entrar en el campo de visión del observatorio colocando un upper limit a XX \citep{2017ApJ...848L..12A}. Debido a la naturaleza que presentó el afterglow de este GRB, en donde, apareció la emisión de rayos X a 9 días \textbf{[??]} y de radio a 16 días \textbf{[??]} después del destello respectivamente, alcanzando un flujo máximo a los \textcolor{red}{120 días} \textbf{[??]} se realiza un monitoreo a ciegas buscando  emisión en TeV's detectable por HAWC.
+Desafortunadamente, el evento de la onda gravitacional GW170817 ocurrió fuera del campo de visión de HAWC. Sin embargo, 8 hrs depués el tránsito logra entrar en el campo de visión del observatorio colocando un upper limit a XX \citep{2017ApJ...848L..12A} después de $\sim$ 8 hrs. después de la detección por Fermi-GBM. Debido a la naturaleza que presentó el afterglow de este GRB, en donde, apareció la emisión de rayos X a 9 días \citep{2017Natur.551...71T} y de radio a 16 días \citep{2017Sci...358.1579H} después del destello respectivamente, alcanzando un flujo máximo a los \textcolor{red}{120 días} \citep{2018A&A...613L...1D, 2018ApJ...856L..18M} se realiza un monitoreo a ciegas buscando  emisión en TeV's detectable por HAWC.
+
+\begin{figure}[ht!]
+  \centering{
+  \includegraphics[width=1.0\linewidth]{Figures/HAWC-FOV-Transit.pdf}}
+  \caption{Transito de la onda gravitacional sobre HAWC.}
+  \label{fig:FOV-HAWC-GW}
+\end{figure}
 
 
 \section{Mapas del cielo de días siderales}
 
-HAWC presenta su óptima sensibilidad para fuentes que se encuentran dentro de las declinaciones -26$\degree$ y +64$\degree$, tal y como se muestra la región sombreada en la figura \ref{fig:FOV-HAWC}. De esta manera definimos a un transito como la visibilidad de una fuente por HAWC la cual se encuentra con un ángulo cenital $\theta$ < 45$\degree$. Un estudio más detallado presentado en \citep{2017ApJ...841..100A} muestra que la mayor cantidad de emisión de fuentes cómo lo son la nebulosa del Cangrejo, y los Markarian 421 y 501 deberían de detectarse dentro de las primeras 4 hrs del transito sobre HAWC. Así mismo los mapas inician a la media noche sideral de HAWC. Los mapas son dividos en mapas de 12 horas siderias, de tal forma que se genera una subclaficiación, aquellas fuentes las cuales tienen una ascensión recta < 3 hrs ó  > 21 hrs ó bien, el complemento.
+HAWC presenta su óptima sensibilidad para fuentes que se encuentran dentro de las declinaciones -26$\degree$ y +64$\degree$, tal y como se muestra la región sombreada en la figura \ref{fig:FOV-HAWC-GW}. De esta manera definimos a un transito como la visibilidad de una fuente por HAWC la cual se encuentra con un ángulo cenital $\theta$ < 45$\degree$. Un estudio más detallado presentado en \citep{2017ApJ...841..100A} muestra que la mayor cantidad de emisión de fuentes cómo lo son la nebulosa del Cangrejo, y los Markarian 421 y 501 deberían de detectarse dentro de las primeras 4 hrs del transito sobre HAWC. Así mismo los mapas inician a la media noche sideral de HAWC. Los mapas son dividos en mapas de 12 horas siderias, de tal forma que se genera una subclaficiación, aquellas fuentes las cuales tienen una ascensión recta < 3 hrs ó  > 21 hrs ó bien, el complemento.\\
+
+Cada mapa sideral está dividido en 9 bines en función de la multiplicidad del primario \citep{2017ApJ...843...39A} y cada bin está constituido por un mapa utilizando una malla de pixeles mediante HEALPix \citep{2005ApJ...622..759G} considerando una resolución de 1024 pixeles a lo largo de la esfera (cada pixel tiene una separación de 0.06$^{\circ}$). Estos mapas son ampliamente dominados por eventos hadrónicos, por lo que la estimación del background se obtiene mediante un procedimiento de integración directa \citep{2003ApJ...595..803A, 2017ApJ...843...39A}. Una vez \textcolor{red}{continuar escribiendo acá}.\\
+
+\section{Búsqueda tardía en TeVs}
+Para este trabajo se consideran 3 bines temporales equidistantes logaritmicamente. De tal manera, que el bin $\mathds{B}_{i}$ con i=\{1,2,3\} contiene 1, 10 y 100 días respectivamente. Estos intervalos de tiempo son corregidos mediante un corte de calidad, mediante los cuales se busca mitigar periodos de inestabilidad del experimento, de tal forma que podemos asegurar que al menos el 50\% del tránsito está contenido dentro del mapa. La tabla \textbf{[??]} muestra la cantidad de tiempo integrado para los 3 bines.
+
+\begin{table}[]
+\centering
+\begin{tabular}{ccc}
+$\mathds{B}$ & Tiempo total sobre HAWC & Tiempo corregido \\
+\hline
+\hline
+1 & 0 & 0 \\
+2 & 0 & 0\\
+3 & 0 & 0 
+\end{tabular}
+\end{table}
+
+\section{Límites al flujo propuestos y restricción a modelos}
+
+Desafortunadamente, este evento no logró ser detectado por HAWC. Así que son calculados limites superiores en el flujo \citep{1998PhRvD..57.3873F,2017ApJ...843...39A,2017ApJ...843...40A} \textcolor{red}{Continuar escribiendo acá}.
 
 \begin{figure}[ht!]
   \centering{
-  \includegraphics[width=1.0\linewidth]{Figures/HAWC_GW.pdf}}
-  \caption{Campo de visión de HAWC}
-  \label{fig:FOV-HAWC}
+  \includegraphics[width=1.0\linewidth]{Figures/LightCurve_GRB170817A.pdf}}
+  \caption{Transito de la onda gravitacional sobre HAWC.}
+  \label{fig:LC170817A}
 \end{figure}
-
-Cada mapa sideral está dividido en 9 bines en función de la multiplicidad del primario \citep{2017ApJ...843...39A} y cada bin está constituido por un mapa utilizando una malla de pixeles mediante HEALPix \citep{2005ApJ...622..759G}
-
-
-
-\section{Búsqueda tardía en TeVs}
-Considerando bines temporales de...

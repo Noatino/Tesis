@@ -263,3 +263,9 @@ TSWLatexianTemp*
 *.png
 *.jpg
 *.jpeg
+
+#gnuplot
+*.gp
+
+#Datos
+*.dat
